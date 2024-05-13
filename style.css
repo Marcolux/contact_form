@@ -85,7 +85,6 @@ body .formBox #myForm .field input:focus-visible {
 }
 
 body .formBox #myForm .field textarea.areaText {
-  overflow-y: scroll;
   border: 1.5px solid #ffc400;
   border-radius: 2px;
   font-family: 'Inter';
@@ -192,5 +191,64 @@ body .flex-justifyContent-center {
 
 body .hide {
   display: none;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    padding: 0px;
+  }
+  body #title {
+    margin-top: 10px !important;
+  }
+  body #introduction {
+    padding: 10px;
+    width: 95%;
+    margin: 20px 10px;
+    font-size: 13px;
+  }
+  body .formBox #myForm {
+    padding: 15px;
+    width: 100%;
+    min-width: 0px;
+  }
+  body .formBox #myForm .field {
+    margin-bottom: 15px;
+  }
+  body .formBox #myForm .field input {
+    font-size: 13px;
+  }
+  body .formBox #myForm .field textarea.areaText {
+    font-size: 13px;
+    padding: 3px;
+  }
+  body .formBox #myForm label {
+    background-color: #ffc504;
+    padding: 3px;
+    color: #000000;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-size: 14px !important;
+  }
+  body .formBox #myForm .submitContainer #messageSent {
+    padding: 3px;
+    font-size: 14px;
+  }
+  body .formBox #myForm .submitContainer button {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+  body #title {
+    margin-top: 10px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
