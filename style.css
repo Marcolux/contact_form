@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'Inter';
+  src: url("./images_fonts/Inter-Regular.ttf");
+}
+
+html {
+  background-color: #000000;
+  height: 100vh;
+}
+
+body {
+  background-color: #000000;
+  background: url("./images_fonts/form_bg2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 97.6vh;
+}
+
+body #title {
+  color: #ffc504;
+  margin: 0px !important;
+}
+
+body #introduction {
+  padding: 30px;
+  width: 80%;
+  color: #000000;
+  background-color: #ffc400d9;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+body .formBox {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-family: 'Inter';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .formBox #myForm {
+  padding: 30px;
+  background-color: #00000090;
+  border: 1px solid #ffc504;
+  border-radius: 8px;
+  width: 80%;
+  min-width: 450px;
+  max-width: 900px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .formBox #myForm .field {
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+body .formBox #myForm .field input {
+  min-height: 28px;
+  border: 1.5px solid #ffc504;
+  border-radius: 2px;
+  padding: 3px;
+  max-width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+body .formBox #myForm .field input:focus-visible {
+  outline-width: 1px;
+  outline-color: #ffc504;
+}
+
+body .formBox #myForm .field textarea.areaText {
+  overflow-y: scroll;
+  border: 1.5px solid #ffc400;
+  border-radius: 2px;
+  font-family: 'Inter';
+  font-size: 14px;
+  padding: 3px;
+}
+
+body .formBox #myForm .field textarea.areaText::-webkit-scrollbar-button {
+  display: none;
+}
+
+body .formBox #myForm .field textarea.areaText::-webkit-scrollbar-track {
+  background: #ffc4003e;
+}
+
+body .formBox #myForm .field textarea.areaText::-webkit-scrollbar-thumb {
+  background-color: #ffc504;
+  border-radius: 10px;
+}
+
+body .formBox #myForm .field textarea.areaText::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
+body .formBox #myForm .field textarea.areaText::-webkit-scrollbar {
+  width: 8px;
+}
+
+body .formBox #myForm .field textarea.areaText:focus-visible {
+  outline-width: 1px;
+  outline-color: #ffc504;
+}
+
+body .formBox #myForm label {
+  background-color: #ffc504;
+  padding: 3px;
+  color: #000000;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+body .formBox #myForm p {
+  margin: 0px;
+}
+
+body .formBox #myForm .submitContainer {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .formBox #myForm .submitContainer #messageSent {
+  background-color: #ffc400;
+  color: #000000;
+  padding: 3px;
+}
+
+body .formBox #myForm .submitContainer button {
+  border: 1.5px solid #ffc504;
+  padding: 5px !important;
+  font-family: 'Inter';
+  font-size: 14px;
+  color: #fff;
+  background-color: #ffffff18;
+  border-radius: 4px;
+}
+
+body .formBox #myForm .submitContainer button:hover {
+  background-color: #ffc504;
+  color: #000000;
+  cursor: pointer;
+}
+
+body .flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+body .flex-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+body .flex-alignItems-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+body .flex-justifyContent-center {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+body .hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
