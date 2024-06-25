@@ -33,16 +33,16 @@
                 <form id="myForm" class="flex flex-column flex-justifyContent-center">
                     
                     <div class="field flex flex-column">       
-                        <label class="" for="from_first_name">Your Full Name<span>*</span></label>
+                        <label class="text-bold" for="from_first_name">Your Full Name<span>*</span></label>
                         <input class="inputText" type="text" name="from_first_name" id="from_first_name" required>
                         <div class="lineBorder"></div>
                     </div>
                     <div class="field flex flex-column">
-                        <label class="" for="email_address">Where can we email you back?<span>*</span></label>
-                        <input class="inputText" type="text" name="email_address" id="email_address">
+                        <label class="text-bold" for="email_address">Where can we email you back?<span>*</span></label>
+                        <input class="inputText" type="email" name="email_address" id="email_address" required pattern=".*\.com$" title="Please enter an email ending with '.com'">
                     </div>
                     <div class="field flex flex-column">
-                        <label class="" for="message">How can we assist you today?<span>*</span></label>
+                        <label class="text-bold" for="message">How can we assist you today?<span>*</span></label>
                         <textarea rows="6" class="areaText inputText" name="message" id="message" required></textarea>
                     </div>
                     <div class="flex flex-justifyContent-spaceBetween submitContainer">
