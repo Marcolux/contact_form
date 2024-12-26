@@ -7,13 +7,16 @@ document.getElementById('myForm')?.addEventListener('submit', function(event) {
     event.preventDefault() 
     emailjs.sendForm('service_77m4c35', 'template_bxw793c', this)
 
-    .then(function(response) {
-        messageSent.classList.remove('hide')
-        inputText.forEach(text => text.value= '')
-        console.log('SUCCESS!', response.status, response.text)
-        setTimeout(()=>{ messageSent.classList.add('hide') }, 5000)
-    }, function(error) {
-        console.log('FAILED...', error)
-        alert("Failed to send email.")
-    })
+    .then(
+        function(response) {
+            messageSent.classList.remove('hide')
+            inputText.forEach(text => text.value= '')
+            console.log('SUCCESS!', response.status, response.text)
+            setTimeout(()=>{ messageSent.classList.add('hide') }, 5000)
+        }, 
+        function(error) {
+            console.log('FAILED...', error)
+            alert("Failed to send email.")
+        }
+    )
 })
